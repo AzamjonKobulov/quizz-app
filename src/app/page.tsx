@@ -21,12 +21,12 @@ const Home: React.FC = () => {
 
   return (
     <div
-      className={`max-w-3xl w-full min-h-[22rem] px-7 py-9  text-white bg-blue-950 rounded-2xl ${
-        step === 4 ? 'grid place-content-center' : ''
+      className={`max-w-3xl w-full min-h-[22rem] px-7 py-9 text-white bg-blue-950 rounded-2xl ${
+        step === data.length + 1 ? 'grid place-content-center' : ''
       }`}
     >
-      {step !== 4 ? (
-        <div className="grid grid-cols-2 gap-x-6">
+      {step !== data.length + 1 ? (
+        <div className="grid sm:grid-cols-2 gap-x-6">
           <Question step={step} data={data} />
           <Answers
             step={step}
