@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lato.className} h-screen flex items-center justify-center bg-blue-400`}
+        className={`${lato.className} px-4 h-screen flex items-center justify-center bg-blue-400`}
       >
         {children}
       </body>
