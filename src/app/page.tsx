@@ -21,7 +21,7 @@ const Home: React.FC = () => {
 
   return (
     <div
-      className={`max-w-3xl w-full min-h-[22rem] px-7 py-9 text-white bg-blue-950 rounded-2xl ${
+      className={`max-w-3xl w-full min-h-[22rem] px-5 py-6 sm:px-7 sm:py-9 text-white bg-blue-950 rounded-2xl ${
         step === data.length ? 'grid place-content-center' : ''
       }`}
     >
