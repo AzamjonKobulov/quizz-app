@@ -7,7 +7,7 @@ interface StatsProps {
 
 const Stats: React.FC<StatsProps> = ({ correctAnswers, data }) => {
   return (
-    <h1 className="text-3xl text-center">
+    <h1 className="text-2xl sm:text-3xl text-center">
       You scored {correctAnswers} out of {data.length}
     </h1>
   );

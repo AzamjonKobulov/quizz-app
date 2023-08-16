@@ -9,13 +9,13 @@ const Question: React.FC<QuestionProps> = ({ step, data }) => {
   return (
     <div>
       <div className="flex items-center space-x-5">
-        <h1 className="text-5xl">Question</h1>
-        <p className="text-3xl">
-          <span className="text-5xl">{step + 1}</span>/
+        <h1 className="text-3xl sm:text-5xl">Question</h1>
+        <p className="text-2xl sm:text-3xl">
+          <span className="text-3xl sm:text-5xl">{step + 1}</span>/
           <span>{data.length}</span>
         </p>
       </div>
-      <p className="text-xl mt-10">{data[step].question}</p>
+      <p className="text-xl mt-7 sm:mt-10">{data[step].question}</p>
     </div>
   );
 };
